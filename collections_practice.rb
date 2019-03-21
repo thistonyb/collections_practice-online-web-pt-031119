@@ -22,20 +22,18 @@ def reverse_array(array)
   array.reverse
 end
 
-def kesha_maker(array)
-  array.collect do |word|
-    word.delete(word[2]).insert(2, '$')
-  end
-end
-
 #def kesha_maker(array)
-  #new_array = []
-  #array.each do |word|
-#  new_word = word.delete(word[2]).insert(2, '$')
-#  new_array << new_word
+#  array.collect do |word|
+#    word.delete(word[2]).insert(2, '$')
 #  end
-  #return new_array
 #end
+
+def kesha_maker (array)
+array.collect do |element|
+ element[2] = "$"
+ element
+end
+end
 
 def find_a(array)
   array.select {|word| word.start_with?("a")}

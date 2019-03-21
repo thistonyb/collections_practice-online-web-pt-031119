@@ -28,6 +28,15 @@ def kesha_maker(array)
   end
 end
 
+#def kesha_maker(array)
+  #new_array = []
+  #array.each do |word|
+#  new_word = word.delete(word[2]).insert(2, '$')
+#  new_array << new_word
+#  end
+  #return new_array
+#end
+
 def find_a(array)
   array.select {|word| word.start_with?("a")}
 end
